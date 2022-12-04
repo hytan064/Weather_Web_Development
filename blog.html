@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <meta charset="utf-8"/>
+        <title>Hong Yong Prototype </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href=""https://fonts.gstatic.com">
+        <link href=""https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"alt="Error"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="course.html">PROJECTS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+            <h1>Project Milestone and Stories</h1>
+            
+        </section>
+
+        <!---Blog page Content-->
+        
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/lighting.png">
+                    <h2>Our Project Milestone Achievement</h2>
+                    <p>Lightning is a naturally occurring electrostatic discharge during which two electrically charged regions, both in the atmosphere or with one on the ground, temporarily neutralize themselves, causing the instantaneous release of an average of one gigajoule of energy.[1][2][3] This discharge may produce a wide range of electromagnetic radiation, from heat created by the rapid movement of electrons, to brilliant flashes of visible light in the form of black-body radiation. Lightning causes thunder, a sound from the shock wave which develops as gases in the vicinity of the discharge experience a sudden increase in pressure. Lightning occurs commonly during thunderstorms as well as other types of energetic weather systems, but volcanic lightning can also occur during volcanic eruptions.</p><br>
+                    <p>The three main kinds of lightning are distinguished by where they occur: either inside a single thundercloud (intra-cloud), between two clouds (cloud-to-cloud), or between a cloud and the ground (cloud-to-ground).[4][5] Many other observational variants are recognized, including "heat lightning", which can be seen from a great distance but not heard; dry lightning, which can cause forest fires; and ball lightning, which is rarely observed scientifically.</p><br>
+                    <p>Humans have deified lightning for millennia. Idiomatic expressions derived from lightning, such as the English expression "bolt from the blue", are common across languages. At all times people have been fascinated by the sight and difference of lightning. The fear of lightning is called astraphobia.</p> <br>
+                
+                    <div class="comment-box">
+                        <h3>Leave a Comment</h3>
+
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+                
+                
+                
+                
+                </div>    
+                <div class="blog-right">
+                    <h3>Number of Projects Completed</h3>
+                    <div>
+                        <span>Public Sector's Project</span>
+                        <span>40</span>
+                    </div>
+                    <div>
+                        <span>Private Sector's Project</span>
+                        <span>30</span>
+                    </div>
+                    <div>
+                        <span>Industries</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>System Demonstration</span>
+                        <span>10</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <!---Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>For any clarification or business collaboration, please contact us</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!----------JavaScript for Toggle Menu--------------->
+        <script>
+            var navLinks=document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <meta charset="utf-8"/>
+        <title>Hong Yong Prototype </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href=""https://fonts.gstatic.com">
+        <link href=""https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"alt="Error"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="course.html">PROJECTS</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                        </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+            <div class="text-box">
+                <h1>Singapore Weather System </h1>
+                <p>In collaboration with Singapore Public System <br>designed by Tan Hong Yong </p>
+                <a href="https://www.nea.gov.sg/weather" class="hero-btn">Visit NEA website To Know More</a>
+            </div>
+        </section>
+
+        <!---Course-->
+        <section class="course">
+            <h1>Products & Solutioning We Offer</h1>
+            <p>Belows are products that we offers. In addition, we product professional post development of system. </p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>Product 1 - Sensor</h3>
+                    <p>Product 1 is blah blah blah</p>
+                </div>
+                <div class="course-col">
+                    <h3>Product 2 - Programming</h3>
+                    <p>Product 2 is blah blah blah</p>
+                </div>
+                <div class="course-col">
+                    <h3>Product 3 - Solutioning</h3>
+                    <p>Product 3 is blah blah blah</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!---Campus-->
+
+        <section class="campus">
+            <h1>Our Summary of Product</h1>
+            <p>This page decript the products that we are selling blah blah blah</p>
+                <div class="row">
+                    <div class="campus-col">
+                        <img src="images/london.png">
+                        <div class="layer">
+                            <h3>SCHOOL</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/newyork.png">
+                        <div class="layer">
+                            <h3>MILITARY CAMP</h3>
+                        </div>
+                    </div>
+                    <div class="campus-col">
+                        <img src="images/washington.png">
+                        <div class="layer">
+                            <h3>INDUSTRIES</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <!-----Facilties-->
+
+        <section class="facilities">
+            <h1>Our Facilties</h1>
+            <p>Portfolio</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png">
+                    <h3>World Class Library</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/basketball.png">
+                    <h3>Largest Play Ground</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque aliquet turpis nulla.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png"alt="">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque aliquet turpis nulla.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!---Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>For any clarification or business collaboration, please contact us</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!----------JavaScript for Toggle Menu--------------->
+        <script>
+            var navLinks=document.getElementById('navLinks');
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>
